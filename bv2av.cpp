@@ -41,10 +41,16 @@ long long bv2av(char bv[])
 
 long long s2n(char *input,long long mult1,int lenth,long long av,long long div1,int s)//我就想造轮子，你能怎么地😂
 {
+	int d;
 	mult1=mult1/div1;
 	for (int i=s;i<lenth;i++)
 	{
-		av=av+((long long)(input[i]-'0'))*mult1;
+		d=input[i]-'0';
+		if ((d<0)||(d>9))
+		{
+			return 170001;//不正经的输入=不正经的输出
+		}
+		av=av+((long long)d)*mult1;
 		mult1=mult1/10;
 	}
 	return av;
