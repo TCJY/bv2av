@@ -75,8 +75,8 @@ int main()
 		av2bv(s2n(input,mult1,lenth,av,1,0),BV);
 		std::cout<<BV<<std::endl;
 		break;
-		case 'B':
-		std::cout<<bv2av(input)<<std::endl;
+		case 'B':case 'b':
+		std::cout<<"AV"<<bv2av(input)<<std::endl;
 		break;
 		default:
 		std::cout<<"输入不正确"<<std::endl;
