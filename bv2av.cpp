@@ -55,7 +55,7 @@ int main()
 	long long av=0,mult1=1;
 	int lenth;
 	char BV[13],input[16];
-	std::cout<<"AV号BV号互转工具\n请输入（AVx、x（x<38068692544）、BV1??4?1?7??）"<<std::endl;
+	std::cout<<"AV号BV号互转工具\n请输入（AVx、x（x<2147483647）、BV1??4?1?7??）"<<std::endl;
 	std::cin>>input;
 	for (lenth=1;lenth<16;lenth++)
 	{
